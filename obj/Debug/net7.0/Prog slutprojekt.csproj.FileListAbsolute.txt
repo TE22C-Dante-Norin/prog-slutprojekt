@@ -1,0 +1,14 @@
+C:\Users\dante.norin\Documents\Prog slutprojekt\bin\Debug\net7.0\Prog slutprojekt.exe
+C:\Users\dante.norin\Documents\Prog slutprojekt\bin\Debug\net7.0\Prog slutprojekt.deps.json
+C:\Users\dante.norin\Documents\Prog slutprojekt\bin\Debug\net7.0\Prog slutprojekt.runtimeconfig.json
+C:\Users\dante.norin\Documents\Prog slutprojekt\bin\Debug\net7.0\Prog slutprojekt.dll
+C:\Users\dante.norin\Documents\Prog slutprojekt\bin\Debug\net7.0\Prog slutprojekt.pdb
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.AssemblyInfoInputs.cache
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.AssemblyInfo.cs
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.csproj.CoreCompileInputs.cache
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.dll
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\refint\Prog slutprojekt.dll
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.pdb
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\Prog slutprojekt.genruntimeconfig.cache
+C:\Users\dante.norin\Documents\Prog slutprojekt\obj\Debug\net7.0\ref\Prog slutprojekt.dll
