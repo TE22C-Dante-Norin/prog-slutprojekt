@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 
-Player player = new Player();
 
+Player player = new Player();
+Random random = new Random();
 
 
 
@@ -12,17 +13,99 @@ class Character{
     public int strength;
 
     public void attack(Character target){
-
     }
 }
 
 class Enemy : Character{
     public int weaponDamage;
-}
 
+    public Enemy(Player player){
+        Random random = new Random();
+
+        health = random.Next(5,9);
+        maxHealth = health;
+        shield = random.Next(3);
+        weaponDamage = random.Next(2,4);
+        Battle battle = new Battle(player,this);
+    }
+}
+/*
 class EnemyHealer : Enemy{
     public void recover(){
         
+    }
+
+    public EnemyHealer(Player player){
+
+    }
+}
+*/
+class Battle{
+    public Battle(Player player, Character target){
+        bool battleActive = true;
+        while(battleActive){
+            printBattleMenu(player,target);
+            enemyTurn(player,target);
+            checkForEnd(player,target);
+        }
+    }
+
+    public void printBattleMenu(Player player, Character target){
+        bool inputCorrect = false;
+        while(!inputCorrect){
+            int inputInt = 0;
+            Console.WriteLine("1. Attack");
+            Console.WriteLine("2. Open inventory");
+            Console.WriteLine("3. Flee");
+            string input = Console.ReadLine();
+            bool inputIsInt = int.TryParse(input, out inputInt);
+            if(!inputIsInt){
+                Console.WriteLine("Please input a number between 1 and 3");
+                Console.WriteLine("Press [Enter] to try again");
+                Console.ReadLine();
+            }
+            else if(inputInt == 1){
+                inputCorrect = true;
+                player.attack(target);
+            }
+            else if(inputInt == 2){
+                inputCorrect = true;
+                /*
+                inventory
+                */
+            }
+            else if(inputInt == 3){
+                inputCorrect = true;
+                /*
+                flee
+                */
+            }
+        }
+    }
+
+    public void enemyTurn(Player player, Character enemy){
+        enemy.attack(player);
+    }
+
+    public void checkForEnd(Player player, Character target){
+        if(player.health <= 0){
+            Console.WriteLine("You have died");
+            Console.WriteLine("Press [Enter] to continue");
+            Console.ReadLine();
+            playerDeath(player);
+        }
+        else if (target.health <= 0){
+            Console.WriteLine("Enemy killed");
+            Console.WriteLine("Press [Enter] to continue");
+            Console.ReadLine();
+            enemyDeath(target);
+        }
+    }
+
+    public void playerDeath(Player player){
+    }
+
+    public void enemyDeath(Character enemy){
     }
 }
 
@@ -128,12 +211,12 @@ class Map{
 class Inventory{
     public ArrayList items = new ArrayList();
 
-    public void equipWeapon(Weapon weapon){
-
+    public Weapon equipWeapon(Weapon weapon){
+        return weapon;
     }
 
-    public void equipArmour(Armour armour){
-
+    public Armour equipArmour(Armour armour){
+        return armour;
     }
 }
 
