@@ -234,7 +234,7 @@ class Weapon : Item{
 
 class Armour : Item{
     public int defence;
-}
+} w
 
 class Consumable : Item{
     public int usesLeft;
